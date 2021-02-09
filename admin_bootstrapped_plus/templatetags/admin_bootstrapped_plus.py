@@ -7,7 +7,7 @@ __email__ = 'gkarak@9-dev.com'
 from django import template
 from django.contrib import admin
 from django.utils.text import capfirst
-from django.core.urlresolvers import reverse, NoReverseMatch
+from django.urls import reverse, NoReverseMatch
 from django.apps import apps
 
 import six
