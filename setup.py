@@ -21,7 +21,7 @@ setup(
     packages=['admin_bootstrapped_plus'],
     include_package_data=True,
     install_requires=[
-        'Django',
+        'django',
         'django-admin-bootstrapped',
     ],
     classifiers=[
