@@ -7,7 +7,7 @@ __email__ = 'gkarak@9-dev.com'
 from django import template
 from django.contrib import admin
 from django.utils.text import capfirst
-from django.core.urlresolvers import reverse, NoReverseMatch
+from django.urls import reverse, NoReverseMatch
 from django.apps import apps
 
 import six
@@ -16,7 +16,7 @@ register = template.Library()
 
 
 # noinspection PyProtectedMember
-@register.assignment_tag(takes_context=True)
+@register.simple_tag(takes_context=True)
 def get_app_list(context):
     """ Return a list of all applications
     Similar to the context `app_list` in index
