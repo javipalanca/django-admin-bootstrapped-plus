@@ -16,7 +16,7 @@ register = template.Library()
 
 
 # noinspection PyProtectedMember
-@register.assignment_tag(takes_context=True)
+@register.simple_tag(takes_context=True)
 def get_app_list(context):
     """ Return a list of all applications
     Similar to the context `app_list` in index
