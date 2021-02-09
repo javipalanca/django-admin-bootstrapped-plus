@@ -8,8 +8,9 @@ from django import template
 from django.contrib import admin
 from django.utils.text import capfirst
 from django.core.urlresolvers import reverse, NoReverseMatch
-from django.utils import six
 from django.apps import apps
+
+import six
 
 register = template.Library()
 
